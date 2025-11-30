@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JODU LABS | Live It First</title>
+	<meta name="description"
+		content="JODU LABS provides instant, data-rich 3D digital twins for architecture, eliminating costly design revisions and providing accurate Quantity Take-Off (QTO) reports.">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght=600;800&display=swap"
+		rel="stylesheet">
+
+	<style>
+		/* --- Colors & Fonts --- */
+		:root {
+			--color-slate: #1D2430;
+			/* Background/Text */
+			--color-concrete: #F4F4F4;
+			/* Light Background */
+			--color-blueprint: #007bff;
+			/* Primary Accent Blue */
+			--color-light-text: #E0E0E0;
+			--font-display: 'Montserrat', sans-serif;
+			--font-body: 'Inter', sans-serif;
+		}
+
+		/* --- Global Styles --- */
+		body {
+			font-family: var(--font-body);
+			background-color: var(--color-slate);
+			color: var(--color-light-text);
+			margin: 0;
+			padding: 0;
+			line-height: 1.6;
+			scroll-behavior: smooth;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		/* --- Header/Navigation --- */
+		header {
+			background-color: var(--color-slate);
+			padding: 15px 0;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+		}
+
+		.logo {
+			font-family: var(--font-display);
+			font-size: 28px;
+			font-weight: 800;
+			color: var(--color-light-text);
+			text-decoration: none;
+			display: block;
+		}
+
+		.logo-accent {
+			color: var(--color-blueprint);
+		}
+
+		/* --- Hero Section --- */
+		#hero {
+			padding: 120px 0;
+			text-align: center;
+			background-color: var(--color-slate);
+		}
+
+		.hero-tagline {
+			font-size: 18px;
+			font-weight: 600;
+			color: var(--color-blueprint);
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			margin-bottom: 10px;
+		}
+
+		.hero-title {
+			font-family: var(--font-display);
+			font-size: 56px;
+			font-weight: 800;
+			line-height: 1.1;
+			margin-bottom: 25px;
+			color: var(--color-concrete);
+		}
+
+		.hero-subtitle {
+			font-size: 20px;
+			max-width: 700px;
+			margin: 0 auto 40px;
+			color: rgba(255, 255, 255, 0.8);
+		}
+
+		.cta-button {
+			display: inline-block;
+			background-color: var(--color-blueprint);
+			color: white;
+			padding: 15px 30px;
+			text-decoration: none;
+			border-radius: 6px;
+			font-weight: 700;
+			transition: background-color 0.3s;
+		}
+
+		.cta-button:hover {
+			background-color: #0056b3;
+		}
+
+		/* --- Feature Section --- */
+		#features {
+			padding: 80px 0;
+			background-color: var(--color-concrete);
+			color: var(--color-slate);
+		}
+
+		.section-title {
+			font-family: var(--font-display);
+			font-size: 36px;
+			font-weight: 800;
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		.feature-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			text-align: center;
+		}
+
+		.feature-card {
+			background-color: white;
+			padding: 30px;
+			border-radius: 8px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+		}
+
+		.feature-card h3 {
+			font-family: var(--font-display);
+			font-size: 22px;
+			color: var(--color-slate);
+			margin-top: 15px;
+		}
+
+		.feature-icon {
+			font-size: 40px;
+			color: var(--color-blueprint);
+		}
+
+		/* --- Contact/Footer --- */
+		footer {
+			background-color: var(--color-slate);
+			padding: 40px 0;
+			text-align: center;
+			border-top: 1px solid rgba(255, 255, 255, 0.05);
+		}
+
+		.footer-text {
+			color: rgba(255, 255, 255, 0.6);
+			margin-bottom: 10px;
+			font-size: 14px;
+		}
+
+		.footer-link {
+			color: var(--color-blueprint);
+			text-decoration: none;
+		}
+
+		.footer-link:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<a href="#" class="logo">JODU<span class="logo-accent">LABS</span></a>
+		</div>
+	</header>
+
+	<section id="hero">
+		<div class="container">
+			<p class="hero-tagline">JODU LABS</p>
+			<h1 class="hero-title">
+				Experience Your Home. <br class="mobile-break"> <span class="logo-accent">Live It
+					First.</span>
+			</h1>
+			<p class="hero-subtitle">
+				We transform chaotic floor plans into real-time, data-rich 3D digital twins, providing
+				instant Quantity Take-Off (QTO) reports and eliminating costly design revisions.
+			</p>
+			<a href="#contact" class="cta-button">Join the Pilot Program</a>
+		</div>
+	</section>
+
+	<section id="features">
+		<div class="container">
+			<h2 class="section-title">The Value of Precision</h2>
+			<div class="feature-grid">
+
+				<div class="feature-card">
+					<span class="feature-icon">✨</span>
+					<h3>Instant Digital Twin</h3>
+					<p>Leverage OpenUSD and RTX technology for physically accurate, real-time
+						visualization of your design, securing client approval faster.</p>
+				</div>
+
+				<div class="feature-card">
+					<span class="feature-icon">⏱️</span>
+					<h3>Zero Revision Rework</h3>
+					<p>Generate new models in seconds from a single data input. Save architects
+						weeks of manual re-drawing and documentation time.</p>
+				</div>
+
+				<div class="feature-card">
+					<span class="feature-icon">💰</span>
+					<h3>Accurate QTO Reporting</h3>
+					<p>Get immediate, precise Quantity Take-Off for every surface and material,
+						mitigating financial risk from costly material ordering errors.</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer id="contact">
+		<div class="container">
+			<div class="footer-text">
+				JODU LABS Private Limited (Under Incorporation) | <span class="logo-accent">Live It
+					First.</span>
+			</div>
+			<div class="footer-text">
+				For pilot program inquiries, contact: <a href="mailto:info@jodulabs.com"
+					class="footer-link">info@jodulabs.com</a>
+			</div>
+			<div class="footer-text">
+				© 2025 JODU LABS. All rights reserved.
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
