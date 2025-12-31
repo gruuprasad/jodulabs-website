@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JODU LABS | Live It First</title>
 	<meta name="description"
-		content="JODU LABS provides instant, data-rich 3D digital twins for architecture, eliminating costly design revisions and providing accurate Quantity Take-Off (QTO) reports.">
+		content="JODU LABS builds 3D houses from 2D plans in 2 minutes, providing builders with affordable, millimeter-precise visualization before groundbreaking.">
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght=600;800&display=swap"
 		rel="stylesheet">
@@ -150,6 +150,60 @@
 			color: var(--color-blueprint);
 		}
 
+		/* --- Demo Section --- */
+		#demo {
+			padding: 80px 0;
+			background-color: white;
+			color: var(--color-slate);
+		}
+
+		.demo-grid {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 30px;
+			margin-top: 40px;
+		}
+
+		.demo-item {
+			flex: 1;
+			text-align: center;
+		}
+
+		.demo-label {
+			font-weight: 700;
+			margin-bottom: 15px;
+			color: var(--color-blueprint);
+			letter-spacing: 1px;
+		}
+
+		.demo-placeholder {
+			width: 100%;
+			aspect-ratio: 4/3;
+			background: #eee;
+			border-radius: 8px;
+			overflow: hidden;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		}
+
+		.demo-arrow {
+			font-size: 48px;
+			color: var(--color-blueprint);
+			font-weight: 800;
+		}
+
+		@media (max-width: 768px) {
+			.demo-grid {
+				flex-direction: column;
+			}
+			.demo-arrow {
+				transform: rotate(90deg);
+			}
+			.hero-title {
+				font-size: 40px;
+			}
+		}
+
 		/* --- Contact/Footer --- */
 		footer {
 			background-color: var(--color-slate);
@@ -185,16 +239,43 @@
 
 	<section id="hero">
 		<div class="container">
-			<p class="hero-tagline">JODU LABS</p>
+			<p class="hero-tagline">AI-Powered Visualization for Builders</p>
 			<h1 class="hero-title">
-				Experience Your Home. <br class="mobile-break"> <span class="logo-accent">Live It
+				Build 3D Houses from 2D Plans. <br class="mobile-break"> <span class="logo-accent">Live It
 					First.</span>
 			</h1>
 			<p class="hero-subtitle">
-				We transform chaotic floor plans into real-time, data-rich 3D digital twins, providing
-				instant Quantity Take-Off (QTO) reports and eliminating costly design revisions.
+				Show your house before groundbreaking. Generate millimeter-precise 3D models in minutes.
 			</p>
 			<a href="#contact" class="cta-button">Join the Pilot Program</a>
+		</div>
+	</section>
+
+	<section id="demo">
+		<div class="container">
+			<h2 class="section-title">From Sketch to 3D in 2 Minutes</h2>
+			<div class="demo-grid">
+				<div class="demo-item">
+					<p class="demo-label">2D FLOOR PLAN</p>
+					<div class="demo-placeholder">
+						<!-- Placeholder for 2D Plan -->
+						<svg width="100%" height="100%" viewBox="0 0 400 300" style="background: #f4f4f4; border: 2px dashed #ccc;">
+							<rect x="50" y="50" width="300" height="200" fill="none" stroke="#333" stroke-width="2"/>
+							<line x1="200" y1="50" x2="200" y2="250" stroke="#333" stroke-width="1"/>
+							<line x1="50" y1="150" x2="200" y2="150" stroke="#333" stroke-width="1"/>
+							<text x="70" y="100" font-family="Arial" font-size="12" fill="#666">Bedroom 1</text>
+							<text x="220" y="150" font-family="Arial" font-size="12" fill="#666">Living Area</text>
+						</svg>
+					</div>
+				</div>
+				<div class="demo-arrow">→</div>
+				<div class="demo-item">
+					<p class="demo-label">3D DIGITAL TWIN</p>
+					<div class="demo-placeholder">
+						<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="High Quality 3D Home Render" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -205,23 +286,22 @@
 
 				<div class="feature-card">
 					<span class="feature-icon">✨</span>
-					<h3>Instant Digital Twin</h3>
-					<p>Leverage OpenUSD and RTX technology for physically accurate, real-time
+					<h3>Millimeter Precision</h3>
+					<p>Powered by NVIDIA Omniverse for physically accurate, real-time
 						visualization of your design, securing client approval faster.</p>
 				</div>
 
 				<div class="feature-card">
 					<span class="feature-icon">⏱️</span>
-					<h3>Zero Revision Rework</h3>
-					<p>Generate new models in seconds from a single data input. Save architects
+					<h3>2-Minute Generation</h3>
+					<p>Generate precise models from a single data input. Save architects
 						weeks of manual re-drawing and documentation time.</p>
 				</div>
 
 				<div class="feature-card">
-					<span class="feature-icon">💰</span>
-					<h3>Accurate QTO Reporting</h3>
-					<p>Get immediate, precise Quantity Take-Off for every surface and material,
-						mitigating financial risk from costly material ordering errors.</p>
+					<span class="feature-icon">🚀</span>
+					<h3>Cloud-Powered Scale</h3>
+					<p>Zero high-end hardware needed. Access your 3D models from any browser, even on mobile networks.</p>
 				</div>
 
 			</div>

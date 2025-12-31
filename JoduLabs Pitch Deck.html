@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoduLabs - Pitch Deck</title>
+    <style>
+        /* Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .slide {
+            width: 960px;
+            height: 540px;
+            background-color: #0f172a;
+            color: #f1f5f9;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            page-break-after: always;
+        }
+
+        h1 { font-size: 56px; color: #38bdf8; margin-bottom: 20px; text-align: center; }
+        h2 { font-size: 44px; color: #38bdf8; margin-bottom: 30px; }
+        h3 { font-size: 28px; color: #38bdf8; margin-bottom: 15px; }
+
+        p { font-size: 18px; line-height: 1.6; margin-bottom: 15px; color: #cbd5e1; }
+        
+        ul, ol { margin-left: 40px; font-size: 18px; line-height: 1.8; }
+        li { margin-bottom: 12px; color: #cbd5e1; }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            height: 100%;
+        }
+
+        .column { padding: 20px; }
+
+        .card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 { color: #38bdf8; margin-top: 0; }
+        .card p, .card li { color: #cbd5e1; font-size: 16px; }
+
+        .center { text-align: center; }
+        .subtitle { font-size: 24px; color: #cbd5e1; margin-bottom: 10px; }
+        .meta { font-size: 14px; color: #94a3b8; margin-top: 20px; }
+
+        @media print {
+            body { padding: 0; background-color: white; }
+            .slide { margin: 0; page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- SLIDE 1: Title -->
+<section class="slide center">
+    <h1>JoduLabs</h1>
+    <p class="subtitle">Build 3D Houses from 2D Plans</p>
+    <p>AI-Powered Visualization for Builders</p>
+    <p style="margin-top: 40px; font-size: 16px;">Show your house before groundbreaking</p>
+    <p class="meta">Bengaluru, India</p>
+</section>
+
+<!-- SLIDE 2: The Challenge -->
+<section class="slide">
+    <h2>The Challenge</h2>
+    <ul>
+        <li>Small builders can't afford 3D rendering (₹25K-1.5L per house)</li>
+        <li>Owners build without seeing their house—spatial awareness is zero</li>
+        <li>After construction: regrets, costly changes, damaged reputation</li>
+        <li>2.5M+ homes built yearly by small/medium builders without 3D visibility</li>
+        <li><strong>The Insight:</strong> Builders just need affordable visualization before breaking ground</li>
+    </ul>
+</section>
+
+<!-- SLIDE 3: Why Now -->
+<section class="slide">
+    <h2>Why Now</h2>
+    <div class="two-column">
+        <div class="column">
+            <div class="card">
+                <h3>India's Housing Boom</h3>
+                <p><strong>₹2.5L Crore</strong> market annually</p>
+                <p><strong>2.5M+ homes</strong> built per year</p>
+                <p><strong>65%</strong> from small/medium builders</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h3>JoduLabs Advantage</h3>
+                <p><strong>2 minutes</strong> to build a 3D house</p>
+                <p><strong>₹2K/mo</strong> (≈₹20 per house)</p>
+                <p>Cloud-powered, works on any laptop + browser</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 4: How It Works -->
+<section class="slide">
+    <h2>How JoduLabs Works</h2>
+    <ul>
+        <li>Builder provides structured floor plan data</li>
+        <li>AI converts to precise 3D model (&lt;1mm accuracy)</li>
+        <li>Show on tablet—owners see it all: rooms, doors, windows, layout</li>
+        <li>AI Interior Designer: Vastu-compliant layouts, furniture placement (Q3 2026)</li>
+        <li>Export precise blueprints for construction team</li>
+        <li>Cloud-powered, works on any browser (Jio 4G ready)</li>
+    </ul>
+</section>
+
+<!-- SLIDE 5: Builder Advantage -->
+<section class="slide">
+    <h2>The Builder Advantage</h2>
+    <div class="two-column">
+        <div class="column">
+            <div class="card">
+                <h3>Old Way (Manual)</h3>
+                <ul>
+                    <li>₹25K-1.5L per house</li>
+                    <li>4-12 hours wait</li>
+                    <li>Requires hiring vendors</li>
+                    <li>Many design revisions = higher cost</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h3>JoduLabs Way</h3>
+                <ul>
+                    <li>₹2K/month for unlimited houses</li>
+                    <li>2 minutes per house</li>
+                    <li>Cloud SaaS—works on any laptop + browser</li>
+                    <li>Show clients instantly, close faster</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 6: 4 Simple Steps -->
+<section class="slide">
+    <h2>4 Simple Steps</h2>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 30px;">
+        <div class="card" style="text-align: center;">
+            <p style="font-size: 20px; font-weight: bold; color: #38bdf8;">1. Upload Plan</p>
+            <p style="font-size: 14px;">Hand-drawn PDF or sketch</p>
+        </div>
+        <div class="card" style="text-align: center;">
+            <p style="font-size: 20px; font-weight: bold; color: #38bdf8;">2. Click Generate</p>
+            <p style="font-size: 14px;">2 minutes processing</p>
+        </div>
+        <div class="card" style="text-align: center;">
+            <p style="font-size: 20px; font-weight: bold; color: #38bdf8;">3. Show Owner</p>
+            <p style="font-size: 14px;">3D walkthrough on tablet/laptop</p>
+        </div>
+        <div class="card" style="text-align: center;">
+            <p style="font-size: 20px; font-weight: bold; color: #38bdf8;">4. Export Blueprints</p>
+            <p style="font-size: 14px;">Precise measurements for construction</p>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 7: Technical Foundation -->
+<section class="slide">
+    <h2>Technical Foundation</h2>
+    <ul>
+        <li><strong>NVIDIA Omniverse:</strong> World-class 3D engine for precise geometry</li>
+        <li><strong>Procedural 3D:</strong> Converts structured data to exact 3D models (&lt;1mm precision)</li>
+        <li><strong>Exact Measurements:</strong> Door placements, window sizes—all geometrically precise</li>
+        <li><strong>Cloud-Powered Rendering:</strong> GPU-backed, zero hardware needed (Jio 4G works)</li>
+        <li><strong>AI-Ready Architecture:</strong> Built for hand-drawn/PDF parsing in Q1 2026</li>
+    </ul>
+</section>
+
+<!-- SLIDE 8: Launch Plan -->
+<section class="slide">
+    <h2>Launch Plan</h2>
+    <ul>
+        <li><strong>Q1 2026:</strong> Partner with 10 small builders in Karnataka, tune the experience</li>
+        <li><strong>Q2 2026:</strong> Open to all builders: ₹2K/month for unlimited houses, free trial</li>
+        <li><strong>Q3 2026:</strong> Add more design options: Vastu temples, kitchens, courtyards</li>
+        <li><strong>Q4 2026:</strong> Show sunlight, airflow—help owners understand the space better</li>
+    </ul>
+</section>
+
+<!-- SLIDE 9: Prototype Ready -->
+<section class="slide">
+    <h2>Technical Prototype Ready</h2>
+    <ul>
+        <li><strong>Core Engine:</strong> Structured floor plan → precise 3D conversion working</li>
+        <li><strong>NVIDIA Omniverse:</strong> GPU-powered 3D generation on cloud infrastructure</li>
+        <li><strong>Precision Validated:</strong> Door/window geometry exact to millimeter</li>
+        <li><strong>Officially Registered:</strong> OPC company, Karnataka (December 2025)</li>
+        <li><strong>Next: Q1 2026:</strong> Hand-drawn/PDF parsing layer + 10 builder pilots</li>
+    </ul>
+</section>
+
+<!-- SLIDE 10: The Founder -->
+<section class="slide center">
+    <h2>Built by Someone Who Gets 3D</h2>
+    <div class="card" style="max-width: 600px; margin: 40px auto; text-align: left;">
+        <p><strong>3D Expertise:</strong> Built systems for precise geometry placement (medical imaging, robotics).</p>
+        <p style="margin-top: 20px;"><strong>Technical Depth:</strong> NVIDIA Omniverse specialist, writes procedural 3D systems.</p>
+        <p style="margin-top: 20px;"><strong>Solver Mindset:</strong> Turns engineering problems into simple, user-friendly products.</p>
+    </div>
+</section>
+
+<!-- SLIDE 11: AI Powers Scale -->
+<section class="slide">
+    <h2>AI Powers Scale (Q1-Q4 2026)</h2>
+    <ul>
+        <li><strong>Q1 2026:</strong> Hand-drawn/PDF parsing MVP (manual conversion pipeline)</li>
+        <li><strong>Q2 2026 (YOLOv8):</strong> Auto-detect doors/windows from sketches, reduce cleanup to 5 min</li>
+        <li><strong>Q3 2026 (Interior AI):</strong> Vastu-compliant auto-layouts, furniture placement, style generation</li>
+        <li><strong>Q4 2026 (Full Automation):</strong> Sketch → 3D + interiors in &lt;1 min, complete spatial planning</li>
+        <li><strong>Competitive Moat:</strong> Procedural AI + Omniverse → only system auto-generating complete Indian home designs</li>
+    </ul>
+</section>
+
+<!-- SLIDE 12: GPU Credits For 2 Workloads -->
+<section class="slide">
+    <h2>GPU Credits For 2 Workloads</h2>
+    <ul>
+        <li><strong>DGX Training (AI):</strong> 10K+ floor plan dataset → YOLOv8 + room segmentation, 3x faster Q1 launch</li>
+        <li><strong>RTX Rendering (Omniverse):</strong> Cloud GPU credits for 3D generation → scale to 1000s concurrent builders</li>
+        <li><strong>Enterprise Discounts:</strong> Omniverse Enterprise + NIM deployment for production</li>
+        <li><strong>Partner Network:</strong> Builders, architects, construction firms across India</li>
+        <li><strong>VC Introductions:</strong> Deep-tech construction investors (NVIDIA-adjacent ecosystem)</li>
+    </ul>
+</section>
+
+<!-- SLIDE 13: What Success Looks Like -->
+<section class="slide">
+    <h2>What Success Looks Like</h2>
+    <div class="two-column">
+        <div class="column">
+            <div class="card">
+                <h3>Year 1 Target</h3>
+                <ul>
+                    <li>500+ builders using JoduLabs</li>
+                    <li>50K+ houses visualized</li>
+                    <li>₹50L revenue</li>
+                    <li>90%+ customer satisfaction</li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <h3>Year 3 Vision</h3>
+                <ul>
+                    <li>10,000+ builders across India</li>
+                    <li>1M+ houses built with JoduLabs</li>
+                    <li>₹10Cr+ revenue</li>
+                    <li>Standard for Indian home building</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 14: The Future -->
+<section class="slide center">
+    <h2>Every House Visualized + Designed Before Built</h2>
+    <p style="font-size: 20px; margin-top: 40px;">Sketch → Precise 3D structure + AI-optimized interiors. Built on Omniverse procedural AI.</p>
+    <p style="font-size: 24px; color: #38bdf8; margin-top: 60px; font-weight: bold;">jodulabs.com</p>
+    <p class="meta">Prototype ready. Builder pilots Q1 2026. Interior AI Q3 2026.</p>
+</section>
+
+<script>
+    // Simple print-to-PDF button
+    window.addEventListener('load', function() {
+        const btn = document.createElement('button');
+        btn.textContent = '📥 Print to PDF';
+        btn.style.cssText = 'position: fixed; bottom: 20px; right: 20px; padding: 12px 20px; background-color: #38bdf8; color: #0f172a; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; z-index: 1000; font-size: 14px; box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);';
+        btn.onmouseover = function() { this.style.backgroundColor = '#0ea5e9'; };
+        btn.onmouseout = function() { this.style.backgroundColor = '#38bdf8'; };
+        btn.onclick = function() { window.print(); };
+        document.body.appendChild(btn);
+    });
+</script>
+
+</body>
+</html>
